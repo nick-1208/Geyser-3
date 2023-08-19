@@ -1379,7 +1379,6 @@ public class GeyserSession implements GeyserConnection, CommandSender {
      * Send an AdventureSettingsPacket to the client with the latest flags
      */
     public void sendAdventureSettings() {
-        AdventureSettingsPacket adventureSettingsPacket = new AdventureSettingsPacket();
         adventureSettingsPacket.setUniqueEntityId(playerEntity.getGeyserId());
         // Set command permission if OP permission level is high enough
         // This allows mobile players access to a GUI for doing commands. The commands there do not change above OPERATOR
